@@ -1,0 +1,4 @@
+baseURL = 'https://rectangularsoftware.com/'
+languageCode = 'en-gb'
+title = 'Rectangular Software'
+theme = 'bootstrap5'

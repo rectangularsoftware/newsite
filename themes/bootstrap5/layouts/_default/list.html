@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1 class="border-bottom">{{ .Title }}</h1>
+  <div class="row">
+    {{ range .Pages }}
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      {{ if .Params.image }}
+      <a href="{{ .Permalink }}">
+        {{ with .Resources.GetMatch .Params.image }}
+          <img src="{{ .Permalink }}" class="ratio ratio-4x3"/>
+        {{ end }}
+      </a>
+      {{ end }}
+      <h5 class="mt-2 mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+      <div class="small text-secondary mb-2">{{ time.Format "2 January 2006" .Params.date }}</div>
+      <small class="text-muted">
+        {{ .Summary }}
+      </small>
+    </div>
+    {{ end }}
+  </div>
+{{ end }}

@@ -4,13 +4,11 @@
   {{- partial "head.html" . -}}
   {{- block "head" . }}{{- end }}
   </head>
-  <body>
-    {{- partial "header.html" . -}}
-    {{- block "background" . }}{{- end }}
-    <div id="content" class="container my-4 pb-2">
+  <body class="text-light">
+    <div id="content" class="container my-5">
     {{- block "main" . }}{{- end }}
     </div>
-    <div id="footer" class="position-absolute bottom-0 w-100">
+    <div id="footer" class="bg-secondary position-absolute bottom-0 w-100">
     {{- partial "footer.html" . -}}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>

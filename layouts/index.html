@@ -16,11 +16,26 @@
           <a href="#" class="btn btn-secondary flex-fill">What do I need to provide?</a>
         </div>
         <p class="mt-3">Any other questions? Ready to get started?</p>
-        <a href="#" class="btn btn-lg btn-primary">Contact Us</a>
+        <a href="#" class="btn btn-lg btn-primary mb-4">Contact Us</a>
       </div>
     </div>
     <div class="col-md-4">
-      <img src="iphone16.png" class="img-fluid"/>
+      <div class="position-relative">
+        <img src="iphone16.png" class="img-fluid position-relative" style="z-index: 6;"/>
+        <div class="carousel slide carousel-fade position-absolute top-0 w-100 h-100 p-2" data-bs-ride="carousel">
+          <div class="carousel-inner h-100 text-center" style="border-radius: 12%">
+            <div class="carousel-item active bg-info h-100" style="padding-top: 20%">
+              Slide 1
+            </div>
+            <div class="carousel-item bg-success h-100" style="padding-top: 20%">
+              Slide 2
+            </div>
+            <div class="carousel-item bg-warning h-100" style="padding-top: 20%">
+              Slide 3
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 {{ end }}

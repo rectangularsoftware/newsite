@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
   :root {
-    --bs-primary: #ff7d00;
-    --bs-primary-rgb: 255, 125, 0;
+    --bs-primary: #423e28;
+    --bs-primary-rgb: 56, 57, 47;
     --bs-secondary: #172a3a;
     --bs-secondary-rgb: 23, 42, 58;
     --bs-light: #f1f2f6;
@@ -19,19 +19,22 @@
     --bs-warning-rgb: 255, 225, 86;
     --bs-link-color-rgb: var(--bs-primary-rgb);
     --bs-link-hover-color-rgb: 0, 68, 136;
+    --bs-body-color: #f8f4e3;
   }
   .btn-primary {
     --bs-btn-bg: var(--bs-primary);
-    --bs-btn-color: var(--bs-light);
-    --bs-btn-border-color: #dd7b00;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-active-color: var(--bs-body-color);
+    --bs-btn-hover-color: var(--bs-body-color);
+    --bs-btn-border-color: #423e28;
     --bs-btn-hover-bg: #ee6c00;
-    --bs-btn-hover-border-color: #dd7b00;
+    --bs-btn-hover-border-color: #423e28;
     --bs-btn-active-bg: #ff8e00;
-    --bs-btn-active-border-color: #dd7b00;
+    --bs-btn-active-border-color: #423e28;
   }
   .btn-secondary {
     --bs-btn-bg: var(--bs-secondary);
-    --bs-btn-color: var(--bs-light);
+    --bs-btn-color: var(--bs-body-color);
     --bs-btn-border-color: var(--bs-secondary);
     --bs-btn-hover-bg: #061929;
     --bs-btn-hover-border-color: #000818;
@@ -41,8 +44,8 @@
   html {min-height: 100%;}
   body {display: flex;
         flex-direction: column;
-        min-height: 100dvh;
-        background-color: #4c82cc;}
-  main {flex: 1;
-        background-image: url('/footer.jpg'); background-repeat: no-repeat; background-size: 100%; background-position: center bottom;}
+        min-height: 100%;
+        background-color: #cc4a00;
+        background-image: linear-gradient(to bottom, #cc4a00, #ff7d00, #bb3900);}
+  main {flex: 1;}
 </style>

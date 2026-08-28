@@ -1,8 +1,8 @@
 {{ define "main" }}
   <div class="row">
-    <div class="col-lg-6 col-md-8 offset-lg-1 offset-md-0">
-      <img src="logo.png" height="112" alt="Rectangular Software"/>
-      <h5 class="mt-2 d-flex align-items-center" style="color: #fff;">
+    <div class="col-lg-7 col-xl-6 offset-xl-1">
+      <h1><img src="logo.svg" height="100" alt="Rectangular Software"/></h1>
+      <h5 class="mt-2 d-flex align-items-center fw-bold">
         <img src="uk.svg" height="28" class="me-2" alt="UK flag"/>
         UK iPhone and Android app development specialists
       </h5>
@@ -17,39 +17,73 @@
         <a href="/contact" class="btn btn-lg btn-primary mb-4">Contact Us</a>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-5 col-xl-4 col-md-8 offset-md-2 offset-lg-0">
       <div class="position-relative">
         <img src="iphone17pro.png" class="img-fluid position-relative" style="z-index: 6;"/>
-        <div class="carousel slide carousel-fade position-absolute top-0 w-100 h-100 p-2" data-bs-ride="carousel" data-bs-interval="10000">
-          <div class="carousel-inner h-100 text-center" style="border-radius: 18%">
-            <div class="carousel-item active bg-info h-100" style="padding-top: 20%; padding-left: 24px; padding-right: 24px;">
-              <h3>iPhone & iPad</h3>
-              <h4>Apple Watch</h4>
-              <h4>MacOS</h4>
-            </div>
-            <div class="carousel-item bg-success h-100" style="padding-top: 20%; padding-left: 24px; padding-right: 24px;">
-              <h3>Android</h3>
-              <p>
-                Rectangular Software was founded in 2010 as an Android app development
-                company and 16 years later we're still building Android apps.
-            </div>
-            <div class="carousel-item bg-warning h-100" style="padding-top: 20%; padding-left: 24px; padding-right: 24px;">
-              <h3>Web Applications</h3>
-              <h4>Python & Django</h4>
-            </div>
-            <div class="carousel-item bg-danger h-100" style="padding-top: 20%; padding-left: 24px; padding-right: 24px;">
-              <h3>Bespoke Development Services</h3>
-              <p>
-
-              </p>
-              <p>
-                We have extensive expertise in Java and Python software development,
-                and in relational database design
-              </p>
-            </div>
+        <div class="position-absolute top-0 w-100 h-100 p-2">
+          <div class="h-100 text-center" style="border-radius: 70px; overflow: hidden; padding-top: 20%; padding-left: 24px; padding-right: 24px; background-image: linear-gradient(to bottom, #19647e, #00415c);">
+            <h4><i class="devicon-apple-original"></i> iPhone, iPad & Apple Watch</h4>
+            <hr/>
+            <h4>
+              <i class="devicon-android-plain"></i>
+              Android
+            </h4>
+            <p>
+              Rectangular Software was founded in 2010 as an Android app development
+              company and 16 years later we're still building apps for Android-powered
+              smartphones and tablets.
+            </p>
+            <hr/>
+            <h4>Web Applications</h4>
+            <i class="devicon-django-plain-wordmark devicon"></i>
+            <i class="devicon-html5-plain-wordmark devicon"></i>
+            <i class="devicon-javascript-plain devicon"></i>
+            <hr/>
+            <h4>Bespoke Development Services</h4>
+            <p>
+              We have extensive expertise in Java and Python software development,
+              and in relational database design
+            </p>
+            <i class="devicon-java-plain-wordmark devicon"></i>
+            <i class="devicon-python-plain-wordmark devicon"></i>
+            <i class="devicon-linux-plain devicon"></i>
+            <i class="devicon-postgresql-plain-wordmark devicon"></i>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-xl-10 offset-xl-1">
+      <hr/>
+      <div class="row">
+        <div class="col-lg col-3">
+          <img src="clientapp1.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="clientapp2.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="clientapp3.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="clientapp4.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="clientapp6.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="clientapp5.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="appmonger.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+        <div class="col-lg col-3">
+          <img src="appmonger.png" class="img-fluid rounded-5 shadow-sm border border-primary" />
+        </div>
+      </div>
+      <h6 class="small text-center mt-3 mb-0 opacity-50">Selected previous app projects</h6>
+      <hr/>
     </div>
   </div>
 {{ end }}

@@ -14,7 +14,57 @@
           Do you need an app for your business?<br/>
           Get in touch to discuss your requirements or request an estimate.
         </p>
-        <a href="/contact" class="btn btn-lg btn-primary mb-4">Contact Us</a>
+        <button type="button" class="btn btn-lg btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#contact-form">
+          Contact Us
+        </button>
+        <div class="modal fade" id="contact-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg text-primary">
+            <form method="post" action="https://forms.un-static.com/forms/52654e608ad3bdece62d5a29af0dfea9ff89de54">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Tell us how we can help</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-end">
+                  <div class="row mb-2">
+                    <label for="name" class="col-sm-2 col-form-label">From</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <i class="input-group-text bi bi-person-circle text-primary"></i>
+                        <input id="name" type="text" class="form-control" name="name" placeholder="Your name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <div class="input-group">
+                        <i class="input-group-text bi bi-envelope-at text-primary"></i>
+                        <input id="email" type="email" class="form-control" name="email" placeholder="Your email address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <label for="message" class="col-sm-2 col-form-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea id="message" name="message" cols="40" rows="8" class="form-control" required></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                      <div class="h-captcha text-start" data-sitekey="8bd8ba02-1940-46d2-bd7a-ec94f4741354">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-lg-5 col-xl-4 col-md-8 offset-md-2 offset-lg-0">
@@ -22,29 +72,41 @@
         <img src="iphone17pro.png" class="img-fluid position-relative" style="z-index: 6;"/>
         <div class="position-absolute top-0 w-100 h-100 p-2">
           <div class="h-100 text-center" style="border-radius: 20% / 10%; overflow: hidden; padding-top: 20%; padding-left: 24px; padding-right: 24px; background-image: linear-gradient(to bottom, #19647e, #00415c);">
-            <h4><i class="devicon-apple-original"></i> iPhone, iPad & Apple Watch</h4>
-            <h4>
-              <i class="devicon-android-plain"></i>
-              Android
-            </h4>
-            <p>
-              Rectangular Software was founded in 2010 as an Android app development
-              company and 16 years later we're still building apps for Android-powered
-              smartphones and tablets.
-            </p>
+            <h3>What we offer</h3>
             <hr/>
-            <h4>Web Applications</h4>
-            <img src="macbookair.png" class="img-fluid" />
-            <hr/>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h4><i class="devicon-apple-original"></i> iPhone, iPad & Apple Watch</h4>
+                  <h4>
+                    <i class="devicon-android-plain"></i>
+                    Android
+                  </h4>
+                  <p>
+                    Native apps that are individually tailored to the full range of Apple and
+                    Android smartphones, tablets, and wearables.
+                    From initial concept to design, coding, integration with
+                    external systems, and publication on app stores.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h4>Web Applications</h4>
+                  <img src="macbookair.png" class="img-fluid" />
+                </div>
+                <div class="carousel-item">
             <h4>Bespoke Development Services</h4>
             <p>
-              We have extensive expertise in Java and Python software development,
-              and in relational database design
+              Extensive expertise in Java and Python software development,
+              relational database systems, and Linux servers.
             </p>
             <i class="devicon-java-plain-wordmark devicon"></i>
             <i class="devicon-python-plain-wordmark devicon"></i>
             <i class="devicon-linux-plain devicon"></i>
+            <i class="devicon-mysql-plain devicon"></i>
             <i class="devicon-postgresql-plain-wordmark devicon"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

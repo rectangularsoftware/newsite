@@ -22,7 +22,7 @@
             <form method="post" action="https://forms.un-static.com/forms/52654e608ad3bdece62d5a29af0dfea9ff89de54">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5">Tell us how we can help</h1>
+                  <h1 class="modal-title fs-5">Message Rectangular Software</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-end">
@@ -47,7 +47,7 @@
                   <div class="row mb-2">
                     <label for="message" class="col-sm-2 col-form-label">Message</label>
                     <div class="col-sm-10">
-                      <textarea id="message" name="message" cols="40" rows="8" class="form-control" required></textarea>
+                      <textarea id="message" name="message" cols="40" rows="8" class="form-control" placeholder="How we can help?" required></textarea>
                     </div>
                   </div>
                   <div class="form-group row">
@@ -69,24 +69,34 @@
     </div>
     <div class="col-lg-5 col-xl-4 col-md-8 offset-md-2 offset-lg-0">
       <div class="position-relative">
-        <img src="iphone17pro.png" class="img-fluid position-relative" style="z-index: 6;"/>
+        <img src="iphone17pro.png" class="img-fluid position-relative" style="z-index: 1;"/>
         <div class="position-absolute top-0 w-100 h-100 p-2">
-          <div class="h-100 text-center" style="border-radius: 20% / 10%; overflow: hidden; padding-top: 20%; padding-left: 24px; padding-right: 24px; background-image: linear-gradient(to bottom, #19647e, #00415c);">
+          <div class="h-100 text-center" style="border-radius: 20% / 10%; overflow: hidden; padding-top: 20%; padding-left: 28px; padding-right: 28px; background-image: linear-gradient(to bottom, #19647e, #00415c);">
             <h3>What we offer</h3>
             <hr/>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+            <div id="carousel" class="carousel slide mt-4" style="height: 85% !important;" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="iPhone, iPad &amp; Apple Watch"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Web Applications"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Bespoke Development Services"></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <h4><i class="devicon-apple-original"></i> iPhone, iPad & Apple Watch</h4>
-                  <h4>
-                    <i class="devicon-android-plain"></i>
-                    Android
-                  </h4>
+                  <h4>iPhone, iPad &amp; Apple Watch</h4>
+                  <h4>Android &amp; Wear OS</h4>
+                  <p class="mt-4">
+                    <i class="devicon-apple-plain devicon"></i>
+                    <i class="devicon-android-plain devicon"></i>
+                  </p>
+                  <hr/>
+                  <p class="lead">
+                    We build native apps that are individually tailored to the full range of Apple
+                    and Android smartphones, tablets, and wearables.
+                  </p>
                   <p>
-                    Native apps that are individually tailored to the full range of Apple and
-                    Android smartphones, tablets, and wearables.
-                    From initial concept to design, coding, integration with
-                    external systems, and publication on app stores.
+                    We're here to help every step of the way &mdash; from initial concept to
+                    design, coding, integration with external systems, and publication on the App
+                    Store and Google Play.
                   </p>
                 </div>
                 <div class="carousel-item">
@@ -94,16 +104,24 @@
                   <img src="macbookair.png" class="img-fluid" />
                 </div>
                 <div class="carousel-item">
-            <h4>Bespoke Development Services</h4>
-            <p>
-              Extensive expertise in Java and Python software development,
-              relational database systems, and Linux servers.
-            </p>
-            <i class="devicon-java-plain-wordmark devicon"></i>
-            <i class="devicon-python-plain-wordmark devicon"></i>
-            <i class="devicon-linux-plain devicon"></i>
-            <i class="devicon-mysql-plain devicon"></i>
-            <i class="devicon-postgresql-plain-wordmark devicon"></i>
+                  <h4>Bespoke Development Services</h4>
+                  <p class="mt-4">
+                    <i class="devicon-java-plain-wordmark devicon"></i>
+                    <i class="devicon-python-plain-wordmark devicon"></i>
+                    <i class="devicon-linux-plain devicon"></i>
+                    <i class="devicon-mysql-plain devicon"></i>
+                    <i class="devicon-postgresql-plain-wordmark devicon"></i>
+                  </p>
+                  <hr/>
+                  <p class="lead">
+                    We also have extensive expertise in Java and Python software development,
+                    relational database systems, and Linux servers, as well as a wide variety of
+                    other technologies.
+                  </p>
+                  <p>
+                    Whatever your specific requirements, get in touch for a no-obligation chat to
+                    see if we can help.
+                  </p>
                 </div>
               </div>
             </div>

@@ -18,11 +18,12 @@
   <h1 class="mb-0">{{ .Title }}</h1>
   <div class="small text-secondary mb-3">{{ time.Format "2 January 2006" .Params.date }}</div>
   {{ else }}
-  <h1>{{ .Title }}</h1>
+  <h1 class="text-center mb-4">{{ .Title }}</h1>
   {{ end }}
   <div class="row">
-    <div class="col-xl order-last order-xl-0">
+    <div class="col-xl order-last order-xl-0 text-center">
       {{ .Content }}
+      <a href="/" class="btn btn-primary mb-4">Back</a>
     </div>
     {{ if .Params.image }}
     <div class="col-xl">
